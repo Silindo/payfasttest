@@ -3,8 +3,10 @@ describe("POST https://swapi.dev/api/planets/3/", function () {
       const response = await request
         .post("https://swapi.dev/api/planets/3/");
   
-      expect(response.status).to.eql(200);
+        //Check status code
+      expect(response.status).to.eql(405);
 
+    
 //Chec error message
 test("Response Body", () => {
   const responseJson = pm.response.json();
