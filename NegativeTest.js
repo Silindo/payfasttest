@@ -5,9 +5,11 @@ describe("POST https://swapi.dev/api/planets/3/", function () {
   
       expect(response.status).to.eql(200);
 
-//Check response time
-test("Check that time does not exceed 3ms", function () {
-    expect(pm.response.responseTime).to.be.below(3);
+//Chec error message
+test("Response Body", () => {
+  const responseJson = pm.response.json();
+  expect(responseJson.detail).to.eql("Method 'POST' not allowed.")
+ 
 });
 });
 });
