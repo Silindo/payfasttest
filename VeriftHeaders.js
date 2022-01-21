@@ -6,13 +6,12 @@ const request = require("supertest")("https://swapi.dev/api/planets/3/");
 const expect = require("chai").expect;
 
 describe("POST https://swapi.dev/api/planets/3/", function () {
-    it("verify body data", async function () {
+    it("verify header", async function () {
       const response = await request
-        .post("https://swapi.dev/api/planets/3/")
-        .send({ from: "KIX", to: "SFO" });
+        .post("https://swapi.dev/api/planets/3/");
   
       expect(response.status).to.eql(200);
-e
+
 test("Status code is 200", function () { pm.response.to.have.status(200); });
 
 //Check Server
