@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "Kishan Chaitanya",
+  "author": "Silindo Kholwane",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.4",
