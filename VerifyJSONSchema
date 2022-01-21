@@ -12,7 +12,6 @@ describe("POST https://swapi.dev/api/planets/3/", function () {
         .post("https://swapi.dev/api/planets/3/");
   
       expect(response.status).to.eql(200);
-      test("Status code is 200", function () { response.to.have.status(200); });
 
       //Schema 
       const schema = {

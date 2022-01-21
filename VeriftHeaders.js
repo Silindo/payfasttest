@@ -12,8 +12,6 @@ describe("POST https://swapi.dev/api/planets/3/", function () {
   
       expect(response.status).to.eql(200);
 
-test("Status code is 200", function () { pm.response.to.have.status(200); });
-
 //Check Server
 test("Check Server", function () {
         response.to.have.header("Server");
